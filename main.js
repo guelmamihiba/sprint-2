@@ -17,10 +17,33 @@
 
 // basicCalculator(1, 'x', 0) ➞ null
 // 'x' is not an operator
+function calculator(a,o,b) {
+    if (o === '+') {
+        return a + b
+  }else    if (o === '-') {
+        return a - b
+}else    if (o === '*') {
+        return a * b
+    }else if (o === 'x'){
+        return null
+    }
+}
 
 
 // Booleans-Extra
 // Write a function called isLeapYear that takes a year as input and returns true if the year is a leap year (i.e., it's divisible by 4, but not divisible by 100 unless it's also divisible by 400), and false otherwise.
+
+function isLeapYear (year){
+    if ( year %4 === 0 && year %100!==0 || year %400 === 0       ){
+        return true 
+    }
+        return false
+}
+
+isLeapYear(15)
+false
+isLeapYear(20)
+true
 
 // Write a function called isValidPassword that takes a string as input and returns true if it meets the following criteria:
 // It has at least 8 characters
